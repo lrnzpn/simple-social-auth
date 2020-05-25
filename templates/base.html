@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Social Auth</title>
+</head>
+<body style="max-width: 1400px;width:90%;margin: 0 auto;">
+  <h1>Simple Social Auth</h1>
+  <p>You are signed in as {{ user.username }} / <a href="{%url 'home' %}">home</a> / <a href="{%url 'settings' %}">settings</a> / <a href="{%url 'password' %}">change password</a> / <a href="{%url 'logout' %}">logout</a></p>
+  <hr>
+  {% block content %}
+  <!-- Content Goes here -->
+  {% endblock content %}
+  <hr>
+  Source: <a href="https://simpleisbetterthancomplex.com/tutorial/2016/10/24/how-to-add-social-login-to-django.html">simpleisbetterthancomplex</a>
+</body>
+</html>
